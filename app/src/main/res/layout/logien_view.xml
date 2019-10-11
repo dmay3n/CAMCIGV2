@@ -6,15 +6,12 @@
     android:orientation="vertical"
     android:background="@drawable/aakibbg" >
 
-
-
     <ImageView
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:background=""/>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,7 +45,7 @@
         </LinearLayout>
 
         <customfonts.MyTextView
-            android:id="@+id/login"
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login Now"
@@ -60,13 +57,8 @@
             android:background="#007AFF"
             android:layout_alignParentBottom="true"/>
 
-
-
-
-
-
     <LinearLayout
-        android:layout_above="@id/login"
+        android:layout_above="@id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -78,9 +70,7 @@
             android:background="@drawable/round"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_alignParentBottom="true"
-
-            >
+            android:layout_alignParentBottom="true">
 
             <ImageView
                 android:layout_width="15dp"
@@ -90,7 +80,7 @@
                 android:src="@drawable/ic_web"/>
 
             <customfonts.MyEditText
-
+                android:id="@+id/userTbx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
@@ -100,11 +90,9 @@
                 android:padding="15dp"
                 android:textColor="#7000"
                 android:textColorHint="#7000"
-                android:textSize="16dp" />
-
+                android:textSize="16dp"/>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -124,9 +112,8 @@
                 android:layout_marginLeft="15dp"
                 android:src="@drawable/ic_lock"/>
 
-
             <customfonts.MyEditText
-                android:id="@+id/password"
+                android:id="@+id/passwordTbx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#00000000"
@@ -137,10 +124,6 @@
                 android:textColor="#7000"
                 android:textColorHint="#7000"
                 android:textSize="16dp" />
-
-
-
-
 
         </LinearLayout>
 

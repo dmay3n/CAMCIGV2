@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE" >
+
+    <!--
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:divider="#00000000">
+
+    </ListView>
+    -->
+
+    <include layout="@layout/listview_toolbar"/>
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <customfonts.MyTextView
+            android:id="@+id/categorie"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="RESTAURANTES"
+            android:layout_marginLeft="20dp"
+            android:textColor="#918080"
+            android:textSize="15dp" />
+
+        <customfonts.MyTextView
+            android:id="@+id/promotionName"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="NOMBRE DE LA \nPROMOCION"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <customfonts.MyTextView
+            android:id="@+id/promotionDate"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="OCTUBRE 22 - OCTUBRE 31"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ab0e0e"
+            android:textSize="18dp" />
+
+        <customfonts.MyTextView
+            android:id="@+id/targetGroup"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SOLO PARA SOCIOS"
+            android:layout_marginLeft="20dp"
+            android:textColor="#918080"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/promotionImage"
+            android:layout_width="340dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_vesuvio_1"/>
+
+        <customfonts.MyTextView
+            android:id="@+id/promotionDescription"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="En 1967 se funda la primera pizzeria italiana en nuestro pais con un sueno y recetas secretas, logra encantar a todos quienes visitan nuestras pizzerias.\n\nBuon Appetito!"
+            android:layout_marginLeft="20dp"
+            android:textColor="#baa4a4"
+            android:textSize="14sp" />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="50dp"
+        android:background="#ACACAC" />
+
+        <!-- BOTTOM BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#000000">
+
+        <!-- ITEMS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#4f4f4f"
+            android:id="@+id/contact">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_home_24"/>
+            <customfonts.MyTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:letterSpacing="0.1"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="#ACACAC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/profile">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_star_24"/>
+
+            <customfonts.MyTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beneficios"
+                android:letterSpacing="0.1"
+                android:textSize="12dp"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="#ACACAC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/album">
+
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_settings_24"/>
+
+            <customfonts.MyTextView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mas"
+                android:letterSpacing="0.1"
+                android:textSize="12dp"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <!-- END ITEMS -->
+
+    </LinearLayout>
+        <!-- END BOTTOM BAR -->
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
+
+
+
+
